@@ -5,6 +5,8 @@
     </div>
     <div class="stock-value-container">
         <span class="value">{{stock.price | currency:"BRL"}}</span>
-        <span class="variation" [class.negative-variation]="stock.variation < 0">{{stock.variation.toLocaleString()}}%</span>
+        <span class="variation" [class.negative-variation]="stock.variation < 0">
+            {{variation}}
+        </span>
     </div>
 </div>
